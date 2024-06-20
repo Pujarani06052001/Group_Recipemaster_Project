@@ -1,11 +1,26 @@
-/* src/App.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+.navbar{
+ display: flex;
+ gap: 1rem;
+ height: 3rem;
+ box-shadow:  0 0 10px rgb(91, 88, 88);
+ padding: 1rem;
+ color: #1a1a1a;
 }
 
-.App {
-  text-align: center;
+
+
+/* src/Nav.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: #fff; /* Set background color to prevent transparency issues */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
+
+
+
+
