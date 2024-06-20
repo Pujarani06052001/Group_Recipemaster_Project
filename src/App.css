@@ -19,14 +19,14 @@
   border: 0;
   padding: 0.5rem 1.8rem;
   color: #fff;
-  background-color: #01193c;
+  background-color: #45a049;
 }
 
 .btn2 {
   border: 0;
   padding: 0.5rem 1.2rem;
   color: #fff;
-  background-color: #f60838;
+  background-color: #45a049;
 }
 
 .Footer {
@@ -42,7 +42,7 @@
 }
 
 .ft-1 span {
-  color: #f60838;
+  color: #45a049;
 }
 
 .ft-1 p {
@@ -52,21 +52,21 @@
 
 .footer-icons i {
   padding: 0.4rem 0.5rem;
-  background: #e1e1e1;
-  color: #f60838;
+  /* background: #e1e1e1; */
+  color: #45a049;
   margin: 0 0.5rem;
   border-radius: 50%;
 }
 
 .footer-icons i:hover {
-  background: #f60838;
+  background: #45a049;
   color: #fff;
   transition: 0.6s;
   cursor: pointer;
 }
 
 .Footer h5 {
-  color: #f60838;
+  color: #45a049;
 }
 
 .ft-2 ul {
@@ -96,7 +96,7 @@
 }
 
 .Last-footer {
-  background: #f60838;
+  background: #45a049;
   text-align: center;
   padding: 1rem 0;
 }
@@ -107,6 +107,6 @@
   font-weight: 700;
 }
 .Footer{
-background-color:  #FFD1DC ;
+background-color:  #F8F8F4 ;
 color: black;
 }
