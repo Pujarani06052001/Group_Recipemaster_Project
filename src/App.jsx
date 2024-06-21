@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Our from './components/Our';
+import About from './components/About';
 import Glossary from './components/Glossary';
 import TipsAndTricks from './components/TipsAndTricks';
 
@@ -16,12 +16,12 @@ const App = () => {
       <div>
         <button onClick={() => handleButtonClick('TipsAndTricks')}>Tips&Tricks</button>
         <button onClick={() => handleButtonClick('Glossary')}>Glossary</button>
-        <button onClick={() => handleButtonClick('Our')}>Our Programs</button>
+        <button onClick={() => handleButtonClick('About')}>About</button>
       </div>
       <div>
         {activeButton === 'TipsAndTricks' && <TipsAndTricks />}
         {activeButton === 'Glossary' && <Glossary />}
-        {activeButton === 'Our' && <Our />}
+        {activeButton === 'About' && <About />}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Our = () => {
+const About = () => {
   return (
     <div className="programs-container">
      
@@ -103,4 +103,4 @@ Join us on this exciting journey of embracing cultural diversity and promoting h
   );
 };
 
-export default Our;
+export default About;
