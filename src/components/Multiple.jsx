@@ -25,7 +25,7 @@ function Multiple() {
           recipes.map((recipe) => (
             <div key={recipe.idMeal} className="recipe">
               <img src={recipe.strMealThumb} alt={recipe.strMeal} />
-              <h2>{recipe.strMeal}</h2>
+              <h2 className='name'>{recipe.strMeal}</h2>
 
             </div>
           ))
