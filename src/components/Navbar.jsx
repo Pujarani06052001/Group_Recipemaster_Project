@@ -1,6 +1,6 @@
 // src/components/Navbar.js
 
-import './Navbar.css';
+// import './Navbar.css';
 
 const Navbar = ({search,setSearch,call,setCall}) => {
    

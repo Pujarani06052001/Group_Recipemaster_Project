@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './Navbar.css';
 
 const Nav = ({ search, setSearch, call, setCall }) => {
   const isAuthenticated = !!sessionStorage.getItem('token');
@@ -19,62 +20,43 @@ const Nav = ({ search, setSearch, call, setCall }) => {
 
   return (
     <>
-      <nav className="bg-white shadow-md text-gray-800">
-        <div className="container mx-auto flex justify-between items-center p-4">
+      <nav className="bg-white shadow-md text-gray-800 ">
+        <div className="container mx-auto flex justify-between items-center p-3">
           <div className="flex space-x-4 ">
-            {/* <Link to="/" className="hover:text-gray-600">
-              Home
-            </Link> */}
-            {/* Add your logo image here */}
-            {/* <img src="/images/logo1.jpeg" alt="Logo" className="h-10 w-16 -ml-4 mr-4 " /> */}
-            <h3 className="text-3xl font-bold font-logo ">Recepi-Master</h3>
+            <h3 className="text-3xl font-bold font-logo mr-20">Recepi-Master</h3>
             {isAuthenticated && (
+
               <>
-            <Link to="/" className="hover:text-gray-600">
+              <div className="flex space-x-5">
+            <Link to="/" className="hover:text-gray-600 mt-2 " >
               Home
             </Link>
-            <Link to="/dashboard" className="hover:text-gray-600 mx-3">
+            <Link to="/dashboard" className="hover:text-gray-600 mx-3 mt-2">
                 Dashboard
               </Link>
-            <Link to="/about" className="hover:text-gray-600">
+            <Link to="/about" className="hover:text-gray-600 mt-2 ">
               About
             </Link>
-            <Link to="/contact" className="hover:text-gray-600">
+            <Link to="/contact" className="hover:text-gray-600 mt-2 ">
               Contact
             </Link>
-            <Link to="/products" className="hover:text-gray-600">
+            <Link to="/products" className="hover:text-gray-600 mt-2 ">
               Products
             </Link>
-            <Link to="/tricks" className="hover:text-gray-600">
+            <Link to="/tricks" className="hover:text-gray-600 mt-2 ">
               Tips & Tricks
             </Link>
-            <Link to="/quick" className="hover:text-gray-600">
+            <Link to="/quick" className="hover:text-gray-600 mt-2 ">
               Quick-Cooking
             </Link>
-            <Link to="/index" className="hover:text-gray-600">
+            <Link to="/index" className="hover:text-gray-600 mt-2 ">
               [A-Z index]
             </Link>
+            </div>
               </>
               
             )}
-            {/* <Link to="/about" className="hover:text-gray-600">
-              About
-            </Link>
-            <Link to="/contact" className="hover:text-gray-600">
-              Contact
-            </Link>
-            <Link to="/products" className="hover:text-gray-600">
-              Products
-            </Link>
-            <Link to="/tricks" className="hover:text-gray-600">
-              Tips & Tricks
-            </Link>
-            <Link to="/quick" className="hover:text-gray-600">
-              Quick-Cooking
-            </Link>
-            <Link to="/index" className="hover:text-gray-600">
-              [A-Z index]
-            </Link> */}
+            
           </div>
 
           <div className="flex items-center space-x-4">

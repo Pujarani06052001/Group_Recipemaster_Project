@@ -47,7 +47,7 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-6">Categories</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             <div className="p-4">
-            <a href="https://www.foodnetwork.com/recipes/photos/italian-dinners"><img src="/images/25.jpg" alt="Category 1" className="mx-auto mb-4 rounded-lg shadow-lg hover:scale-105" />
+            <a href="https://www.foodnetwork.com/recipes/photos/italian-dinners"><img src="/images/51.webp" alt="Category 1" className="mx-auto mb-4 rounded-lg shadow-lg hover:scale-105" />
 </a>
               <h3 className="text-2xl font-semibold mb-2">Italian</h3>
             </div>
@@ -59,7 +59,7 @@ const Home = () => {
             </div>
             
             <div className="p-4">
-            <a href='https://www.foodnetwork.com/recipes/packages/global-flavors/weeknights/top-mexican-food-recipes'><img src="/images/img16.jpg" alt="Category 3" className="mx-auto mb-4 rounded-lg shadow-lg hover:scale-105" />
+            <a href='https://www.foodnetwork.com/recipes/packages/global-flavors/weeknights/top-mexican-food-recipes'><img src="/images/52.jpg" alt="Category 3" className="mx-auto mb-4 rounded-lg shadow-lg hover:scale-105" />
             </a>
               <h3 className="text-2xl font-semibold mb-2">Mexican</h3>
             </div>
@@ -93,17 +93,17 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-6">Why Choose Us</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             <div className="p-4">
-              <img src="/images/31.jpg" alt="Quality Food" className="mx-auto mb-4 rounded-lg shadow-lg  hover:scale-105" />
+              <img src="/images/53.jpg" alt="Quality Food" className="mx-auto mb-4 rounded-lg shadow-lg  hover:scale-105" />
               <h3 className="text-2xl font-semibold mb-2">Quality Food</h3>
               <p>We use the freshest ingredients to prepare delicious meals that meet the highest standards.</p>
             </div>
             <div className="p-4">
-              <img src="/images/31.jpg" alt="Convenience" className="mx-auto mb-4 rounded-lg shadow-lg  hover:scale-105" />
+              <img src="/images/54.jpg" alt="Convenience" className="mx-auto mb-4 rounded-lg shadow-lg  hover:scale-105" />
               <h3 className="text-2xl font-semibold mb-2">Convenience</h3>
               <p>Enjoy gourmet meals delivered straight to your doorstep, ready to eat in minutes.</p>
             </div>
             <div className="p-4">
-              <img src="/images/31.jpg" alt="Variety" className="mx-auto mb-4 rounded-lg shadow-lg  hover:scale-105" />
+              <img src="/images/56.jpg" alt="Variety" className="mx-auto mb-4 rounded-lg shadow-lg  hover:scale-105" />
               <h3 className="text-2xl font-semibold mb-2">Variety</h3>
               <p>Choose from a wide range of cuisines and meal options that cater to all tastes and dietary needs.</p>
             </div>
@@ -115,22 +115,22 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-6">Customer Testimonials</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div className="p-4">
-              <img src="/images/img1.png" alt="Customer 1" className="mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
+              <img src="/images/57.jpg" alt="Customer 1" className="mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
               <p className="italic">"RecipeMaster has transformed my meal planning. The food is delicious and healthy, and the convenience is unmatched!"</p>
               <p className="mt-2 font-semibold">- Sarah M.</p>
             </div>
             <div className="p-4">
-              <img src="/images/img1.png" alt="Customer 2" className="mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
+              <img src="/images/58.webp" alt="Customer 2" className="mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
               <p className="italic">"I love the variety and quality of the meals. RecipeMaster makes it so easy to eat well even with a busy schedule."</p>
               <p className="mt-2 font-semibold">- James L.</p>
             </div>
             <div className="p-4">
-              <img src="/images/img1.png" alt="Customer 3" className="mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
+              <img src="/images/59.webp" alt="Customer 3" className="mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
               <p className="italic">"The meal plans are fantastic. Healthy and tasty options for every day!"</p>
               <p className="mt-2 font-semibold">- Emily R.</p>
             </div>
             <div className="p-4">
-              <img src="/images/img1.png" alt="Customer 4" className="mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
+              <img src="/images/60.webp" alt="Customer 4" className="mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
               <p className="italic">"Great service and delicious meals. Highly recommend RecipeMaster!"</p>
               <p className="mt-2 font-semibold">- Michael T.</p>
             </div>
