@@ -33,10 +33,6 @@ const ImageGrid = ({ data, loading }) => {
           <img src="/images/img13.jpg" alt="Image 1" />
         </div>
 
-        
-         
-
-
         )
       )}
     </>
