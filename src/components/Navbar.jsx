@@ -1,6 +1,6 @@
 // src/components/Navbar.js
 
-import './Navbar.css';
+// import './Navbar.css';
 
 const Navbar = ({search,setSearch,call,setCall}) => {
    
@@ -20,7 +20,7 @@ const Navbar = ({search,setSearch,call,setCall}) => {
      <div className="navbar-search">
         <input type="text" placeholder="Search recipes..." onChange={(e)=>{setSearch (e.target.value)}}/>
 
-        <button onClick={setCall(true)}>search</button>
+        <button onClick={setCall}>search</button>
       </div>
       <div className="navbar-icons">
         <i className="fas fa-user"></i>
