@@ -1,3 +1,16 @@
+
+import React from 'react'
+
+const About = () => {
+    return (
+        <div>
+            <h1> This is a About Us Page</h1>
+        </div>
+    )
+}
+
+export default About;
+
 import React from 'react';
 
 const About = () => {
@@ -63,7 +76,7 @@ Join us on this exciting journey of embracing cultural diversity and promoting h
          <h2>Professional Development Training</h2>
          <p>Our program is designed to equip dietitians and healthcare professionals with the essential skills and knowledge needed to establish meaningful connections with the communities they serve by enhancing their cultural competence.
 
-​
+
 
 We recognize the critical role that cultural understanding plays in providing effective healthcare and nutrition guidance. Our program focuses on fostering cultural competence by offering in-depth education and practical strategies to better engage with diverse populations. Through our comprehensive curriculum, ranging from 60 minutes to 2-day training, participants will develop the necessary tools to navigate cultural differences, respect unique traditions, and tailor their services to meet the specific needs of individuals from various backgrounds. Using interactive sessions that explore cultural beliefs, traditions, and dietary practices, enables professionals to develop a heightened awareness and appreciation for cultural diversity.
 
@@ -86,17 +99,7 @@ This program equips participants with the knowledge to provide culturally sensit
       
        <div className="program-text">
          <h2>Nutrition Education </h2>
-         <p>
-
-Our interactive classes are designed for both children and adults, offering a unique opportunity to learn how to enjoy foods from their own cultural backgrounds in a nutritious and wholesome way.
-
- 
-
-We understand the importance of preserving cultural heritage while prioritizing health and well-being. That's why our programs focus on teaching individuals how to incorporate traditional and culturally significant foods into a balanced diet.
-
-​
-
-Join us on this exciting journey of embracing cultural diversity and promoting health through food. </p>
+         <p>Our interactive classes are designed for both children and adults, offering a unique opportunity to learn how to enjoy foods from their own cultural backgrounds in a nutritious and wholesome way.We understand the importance of preserving cultural heritage while prioritizing health and well-being. That's why our programs focus on teaching individuals how to incorporate traditional and culturally significant foods into a balanced diet.Join us on this exciting journey of embracing cultural diversity and promoting health through food. </p>
        </div>
      </div>
     </div>
@@ -104,3 +107,4 @@ Join us on this exciting journey of embracing cultural diversity and promoting h
 };
 
 export default About;
+
