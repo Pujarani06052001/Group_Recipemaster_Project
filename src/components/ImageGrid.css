@@ -1,0 +1,28 @@
+/* src/components/ImageGrid.css */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .image-grid img {
+    width: calc(20.33% - 20px); 
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    opacity: 2px; /* Reduce opacity */
+  }
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
