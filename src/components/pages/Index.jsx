@@ -1,8 +1,11 @@
 import React from 'react'
+import Multiple from '../Multiple'
 
 const Index = () => {
   return (
-    <div>Index</div>
+    <>
+      <Multiple/>
+    </>
   )
 }
 

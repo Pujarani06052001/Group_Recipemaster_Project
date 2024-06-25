@@ -1,31 +1,31 @@
-import React, { useState } from 'react';
-import './App.css';
-import About from './components/About';
-import Glossary from './components/Glossary';
-import TipsAndTricks from './components/TipsAndTricks';
+// import  { useState } from 'react';
+// import './App.css';
+// import About from './components/About';
+// import Glossary from './components/Glossary';
+// import TipsAndTricks from './components/TipsAndTricks';
 
-const App = () => {
-  const [activeButton, setActiveButton] = useState('TipsAndTricks');
+// const App = () => {
+//   const [activeButton, setActiveButton] = useState('TipsAndTricks');
 
-  const handleButtonClick = (buttonName) => {
-    setActiveButton(buttonName);
-  };
+//   const handleButtonClick = (buttonName) => {
+//     setActiveButton(buttonName);
+//   };
 
-  return (
-    <div>
-      <div>
-        <button onClick={() => handleButtonClick('TipsAndTricks')}>Tips&Tricks</button>
-        <button onClick={() => handleButtonClick('Glossary')}>Glossary</button>
-        <button onClick={() => handleButtonClick('About')}>About</button>
-      </div>
-      <div>
-        {activeButton === 'TipsAndTricks' && <TipsAndTricks />}
-        {activeButton === 'Glossary' && <Glossary />}
-        {activeButton === 'About' && <About />}
-      </div>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <div>
+//         <button onClick={() => handleButtonClick('TipsAndTricks')}>Tips&Tricks</button>
+//         <button onClick={() => handleButtonClick('Glossary')}>Glossary</button>
+//         <button onClick={() => handleButtonClick('About')}>About</button>
+//       </div>
+//       <div>
+//         {activeButton === 'TipsAndTricks' && <TipsAndTricks />}
+//         {activeButton === 'Glossary' && <Glossary />}
+//         {activeButton === 'About' && <About />}
+//       </div>
+//     </div>
+//   );
+// }
 
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';

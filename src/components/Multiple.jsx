@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "../App.css"
 function Multiple() {
   const [recipes, setRecipes] = useState([]);
 
