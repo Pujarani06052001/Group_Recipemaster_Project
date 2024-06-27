@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Glossary = () => {
+    
   return(
     <div className='Glossary'>
 <tbody>

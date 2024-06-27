@@ -1,31 +1,4 @@
-// import  { useState } from 'react';
-// import './App.css';
-// import About from './components/About';
-// import Glossary from './components/Glossary';
-// import TipsAndTricks from './components/TipsAndTricks';
 
-// const App = () => {
-//   const [activeButton, setActiveButton] = useState('TipsAndTricks');
-
-//   const handleButtonClick = (buttonName) => {
-//     setActiveButton(buttonName);
-//   };
-
-//   return (
-//     <div>
-//       <div>
-//         <button onClick={() => handleButtonClick('TipsAndTricks')}>Tips&Tricks</button>
-//         <button onClick={() => handleButtonClick('Glossary')}>Glossary</button>
-//         <button onClick={() => handleButtonClick('About')}>About</button>
-//       </div>
-//       <div>
-//         {activeButton === 'TipsAndTricks' && <TipsAndTricks />}
-//         {activeButton === 'Glossary' && <Glossary />}
-//         {activeButton === 'About' && <About />}
-//       </div>
-//     </div>
-//   );
-// }
 
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -42,8 +15,8 @@ import ImageGrid from './components/ImageGrid';
 import Quick from './components/pages/Quick';
 import Index from './components/pages/Index';
 import Tricks from './components/pages/Tricks';
-import Chinese from './components/Chinese';
-import { Italian } from './components/Italian';
+
+import Glossary from './components/pages/Glossary';
 
 const App = () => {
   const [search, setSearch] = useState('');
@@ -86,47 +59,31 @@ const App = () => {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            {/* <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path='/Quick' element={<Quick />}/>
-            <Route path='/index' element={<Index/>}/>
-            <Route path='/tricks' element={<Tricks/>}/>
-            <Route path="/products" element={<Products />} /> */}
             <Route element={<ProtectedRoute />}>
                   <Route path="/" element={<Home />} />
+                  <Route path = "/abc" element={<Glossary/>}/>
+
                   <Route path="/about" element={<About />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path='/Quick' element={<Quick />}/>
                   <Route path='/index' element={<Index/>}/>
                   <Route path='/tricks' element={<Tricks/>}/>
                   <Route path="/products" element={<Products />} />
+
                     <Route path="/dashboard" element={<ImageGrid data={data} loading={loading} />} />
-                  <Route Path = "/chinese" element={<Chinese/>}/>
-                  <Route Path = "/italian" element={<Italian/>}/>
+                
+
             </Route>
           </Routes>
       
 
 
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </BrowserRouter>
   );
 };
 
 export default App;
-// import './App.css'
-// import Multiple from './components/Multiple'
 
-// function App() {
-
-//   return (
-//     <>         
-//       <Multiple/>
-//     </>
-//   )
-// }
-
-// export default App

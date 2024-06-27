@@ -85,7 +85,7 @@ const Login = () => {
           <button
           type="submit"
           disabled={btndisable}
-          className={`w-full py-2 rounded hover:bg-indigo-600 transition duration-200 ${btndisable ? 'bg-gray-300 cursor-not-allowed' : 'bg-indigo-500'}`}
+          className={`w-full py-2 rounded hover:bg-indigo-600 transition dura}tion-200 ${btndisable ? 'bg-gray-300 cursor-not-allowed' : 'bg-indigo-500'}`}
           style={{ backgroundColor: btndisable ? '#CCCCCC' : '#4F46E5' }}
         >
           Login

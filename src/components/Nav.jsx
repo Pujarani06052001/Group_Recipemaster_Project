@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Navbar.css';
+
 
 const Nav = ({ search, setSearch, call, setCall }) => {
   const isAuthenticated = !!sessionStorage.getItem('token');
@@ -37,21 +37,21 @@ const Nav = ({ search, setSearch, call, setCall }) => {
             <Link to="/about" className="hover:text-gray-600 mt-2 ">
               About
             </Link>
-            <Link to="/contact" className="hover:text-gray-600 mt-2 ">
-              Contact
-            </Link>
+           
             <Link to="/products" className="hover:text-gray-600 mt-2 ">
-              Products
-            </Link>
-            <Link to="/tricks" className="hover:text-gray-600 mt-2 ">
-              Tips & Tricks
-            </Link>
-            <Link to="/quick" className="hover:text-gray-600 mt-2 ">
               Quick-Cooking
             </Link>
             <Link to="/index" className="hover:text-gray-600 mt-2 ">
               [A-Z index]
             </Link>
+            <Link to="/abc" className="hover:text-gray-600 mt-2 ">
+              Glossary
+            </Link>
+            <Link to="/tricks" className="hover:text-gray-600 mt-2 ">
+              Tips & Tricks
+            </Link>
+            
+          
             </div>
               </>
               

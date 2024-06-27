@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate , Outlet} from 'react-router-dom';
 import  Nav from './components/Nav';
+import Footer from './components/Footer';
 
 const ProtectedRoute = ({ data }) => {
   const token = sessionStorage.getItem('token'); 
@@ -11,6 +12,7 @@ const ProtectedRoute = ({ data }) => {
   return (
     <>
       <Outlet context={{ data }} />
+      <Footer />
     </>
   );
 };

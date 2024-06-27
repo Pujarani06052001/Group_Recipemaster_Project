@@ -1,60 +1,110 @@
+// import React from 'react';
+
+// function Footer() {
+//   return (
+//     <>
+
+
+//        <div className="Footer">
+//                 <div className="container">
+//                     <div className="row">
+//                         <div className="col-md-6 col-lg-5 col-12 ft-1">
+//                             <h3><span>Recipe</span>Master</h3>
+//                             <p>Recipe Master is a web application designed to help users discover, organize, and share recipes. Whether you're a professional chef or a home cook, Recipe Master provides a user-friendly platform to find delicious recipes, save your favorite.</p>
+//                             <div className="footer-icons">
+//                                 <i class="fa-brands fa-facebook"></i>
+//                                 <i class="fa-brands fa-twitter"></i>
+//                                 <i class="fa-brands fa-instagram"></i>
+//                                 <i class="fa-brands fa-linkedin-in"></i>
+//                             </div>
+//                         </div>
+//                         <div className="col-md-6 col-lg-3 col-12 ft-2">
+//                             <h5>Quick Links</h5>
+//                             <ul>
+//                                 <li className="nav-item">
+//                                     <a className="" href="<Contact/>">Services</a>
+//                                 </li>
+//                                 {/* <li className="nav-item">
+//                                     <a className="" href="/">Portfol</a>
+//                                 </li> */}
+//                                 <li className="nav-item">
+//                                     <a className="" href="/">Contact Us</a>
+//                                 </li>
+//                                 <li className="nav-item">
+//                                     <a className="" href="/">Services</a>
+//                                 </li>
+//                                 <li className="nav-item">
+//                                     <a className="" href="/">feedback</a>
+//                                 </li>
+//                             </ul>
+//                         </div>
+//                         <div className="col-md-6 col-lg-4 col-12 ft-3">
+//                             <h5>Quick Links</h5>
+//                             <p><i class="fa-solid fa-phone-volume"></i> +92 3121324083</p>
+//                             <p><i class="fa-solid fa-envelope"></i> recipemaster@gmail.com</p>
+//                             <p><i class="fa-solid fa-paper-plane"></i> Delhi,India.</p>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div className='Last-footer'>
+//                 <p>Design By Recipe-Master-Group</p>
+//             </div>
+        
+
+//      </>
+//   )
+// }
+// export default Footer;
+
 import React from 'react';
-import '../Footer.css';
 
-const Footer = () => (
-  <footer className="footer bg-gray-900 text-white py-8">
-    <div className="container mx-auto px-4">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* About Us */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">About RecipeMaster</h3>
-          <p>RecipeMaster delivers fresh and healthy meal plans directly to your door, making it easy to enjoy delicious meals without the hassle of cooking.</p>
-        </div>
-
-        {/* Contact Info */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-          <p>Email: support@recipemaster.com</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Address: 123 RecipeMaster St, Miami, FL 33101</p>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul>
-            <li><a href="/about" className="hover:underline">About Us</a></li>
-            <li><a href="/plans" className="hover:underline">Meal Plans</a></li>
-            <li><a href="/faq" className="hover:underline">FAQ</a></li>
-            <li><a href="/contact" className="hover:underline">Contact</a></li>
-          </ul>
-        </div>
-
-        {/* Social Media */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-          <div className="flex space-x-4">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src="/images/facebook-icon.png" alt="Facebook" className="h-6 w-6" />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <img src="/images/twitter-icon.png" alt="Twitter" className="h-6 w-6" />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src="/images/instagram-icon.png" alt="Instagram" className="h-6 w-6" />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-              <img src="/images/linkedin-icon.png" alt="LinkedIn" className="h-6 w-6" />
-            </a>
+function Footer() {
+  return (
+    <footer className="bg-gray-900 text-white p-6 mt-8">
+      <div className="container mx-auto">
+        <div className="flex flex-wrap">
+          <div className="w-full md:w-1/2 lg:w-2/5 mb-6 md:mb-0">
+            <h3 className="text-2xl font-bold mb-4">
+              <span className="text-yellow-500">Recipe</span>Master
+            </h3>
+            <p className="mb-4">
+              Recipe Master is a web application designed to help users discover, organize, and share recipes. Whether you're a professional chef or a home cook, Recipe Master provides a user-friendly platform to find delicious recipes and save your favorites.
+            </p>
+            <div className="flex space-x-4">
+              <i className="fab fa-facebook fa-lg"></i>
+              <i className="fab fa-twitter fa-lg"></i>
+              <i className="fab fa-instagram fa-lg"></i>
+              <i className="fab fa-linkedin-in fa-lg"></i>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/5 mb-6 md:mb-0">
+            <h5 className="text-xl font-bold mb-4">Quick Links</h5>
+            <ul>
+              <li className="mb-2">
+                <a className="hover:underline" href="/services">Services</a>
+              </li>
+              <li className="mb-2">
+                <a className="hover:underline" href="/contact">Contact Us</a>
+              </li>
+              <li className="mb-2">
+                <a className="hover:underline" href="/feedback">Feedback</a>
+              </li>
+            </ul>
+          </div>
+          <div className="w-full lg:w-2/5">
+            <h5 className="text-xl font-bold mb-4">Contact Us</h5>
+            <p className="mb-2"><i className="fas fa-phone-volume mr-2"></i> +92 3121324083</p>
+            <p className="mb-2"><i className="fas fa-envelope mr-2"></i> recipemaster@gmail.com</p>
+            <p className="mb-2"><i className="fas fa-paper-plane mr-2"></i> Delhi, India.</p>
           </div>
         </div>
       </div>
-
-      <div className="mt-8 border-t border-gray-700 pt-4 text-center">
-        <p>&copy; {new Date().getFullYear()} RecipeMaster. All rights reserved.</p>
+      <div className="bg-gray-800 text-center py-4 mt-6">
+        <p>Design By Recipe-Master-Group</p>
       </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+}
 
 export default Footer;

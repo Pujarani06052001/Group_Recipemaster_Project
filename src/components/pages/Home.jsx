@@ -35,7 +35,7 @@ const Home = () => {
                 className="bg-green-500 text-white py-2 px-4  hover:bg-green-600" 
                 onClick={handleOrderNowClick}
               >
-                Order Now
+                Search
               </button>
             </Link>
            
