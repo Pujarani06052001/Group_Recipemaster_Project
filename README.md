@@ -1,5 +1,16 @@
 # Recipe- master Project 
 
+## Technologies Used
+
+- HTML
+- CSS
+- React
+- TailwindCSS
+
+## Getting Started
+
+To get a local copy up and running
+
 ## Login Page
 ![Screenshot from 2024-07-16 11-47-18](https://github.com/user-attachments/assets/051cf89c-e20d-48b4-9085-3e4655acf2b7)
 
@@ -28,13 +39,3 @@
 ![Screenshot from 2024-07-16 11-49-08](https://github.com/user-attachments/assets/df228f47-d43b-40b8-b142-53e2f3c5e4da)
 
 
-## Technologies Used
-
-- HTML
-- CSS
-- React
-- TailwindCSS
-
-## Getting Started
-
-To get a local copy up and running
