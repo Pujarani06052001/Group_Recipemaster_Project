@@ -1,42 +1,419 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.nav_ul li {
+  padding: 0 0.6rem;
+}
+
+.nav_ul a {
+  font-size: 1.05rem;
+  color: #000 ;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.btn1 {
+  border: 0;
+  padding: 0.5rem 1.8rem;
+  color: #fff;
+  background-color: #45a049;
+}
+
+.btn2 {
+  border: 0;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  background-color: #45a049;
+}
+
+.Footer {
+  padding: 2rem 0;
+  margin-top: 15rem;
+}
+
+.ft-1 h3 {
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+}
+
+.ft-1 span {
+  color: #45a049;
+}
+
+.ft-1 p {
+  padding: 0rem 5rem 0.8rem 0;
+  font-weight: 500;
+}
+
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  /* background: #e1e1e1; */
+  color: #45a049;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.footer-icons i:hover {
+  background: #45a049;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.Footer h5 {
+  color: #45a049;
+}
+
+.ft-2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-2 ul li {
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+
+.ft-2 ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.06rem;
+}
+
+.ft-3 p {
+  font-weight: 500;
+  padding: 0.1rem 0;
+  font-size: 1.06rem;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 2; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+/*  Akhila  */
+.programs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  .program-row {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px;
+    width: 80%; 
+    
+   
+  }
+  
+  .program-image {
+    flex: 1;
+    text-align: center; 
+   
+  }
+  
+  .program-text {
+    flex: 1;
+    text-align: Center; 
+  }
+  
+  .program-img {
+    max-width: 100%; 
+    height: auto;
+    max-height: 500px; 
+  }
+  .Tips {
+    max-width: 800px ;
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  ol {
+    padding-left: 20px;
+  }
+  .Glossary {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  td:first-child {
+    font-weight: bold;
+    width: 40%; 
+  }
+  
+  td:nth-child(2) {
+    width: 10%;
+  }
+  
+  td:nth-child(3) {
+    width: 50%;
+  }
+  .tips-container {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center; 
+  }
+  
+  .tips-container h2 {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 768px) {
+    td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    td:nth-child(2) {
+      display: none; 
+    }
+    
+    td:first-child, 
+    td:nth-child(3) {
+      width: 100%;
+      font-weight: normal; 
+    }
+  
+    td:first-child::after {
+      content: " - ";
+      display: inline;
+      font-weight: bold;
+    }
+    .program-row {
+      flex-direction: column;
+    }
+  
+    .program-image,
+    .program-text {
+      flex: 1;
+      margin: 0;
+    }
+  }
+    
+
+
+.navbar{
+ display: flex;
+ gap: 1rem;
+ height: 3rem;
+ box-shadow:  0 0 10px rgb(91, 88, 88);
+ padding: 1rem;
+ color: #1a1a1a;
+}
+
+
+
+/* src/Nav.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: #fff; /* Set background color to prevent transparency issues */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+
+
+
+*{
+  background-color: none rgb(227, 227, 227);
+}
+.navbar {
+  background-color:rgb(115 64 96 / var(--tw-bg-opacity));
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  height: 75px; 
+}
+.logo{
+  border-radius: 2px;
+  height: 100px; 
+
+}
+.navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar {
+  background-color: rgb(115, 64, 96);
+  color: white;
+}
+.login{
+  margin-left: auto;
+}
+
+
+
+.input{
+  margin: auto;
+  border-radius: 1%;
+  width: 30%;
+  height: 30px;
+  font-size: 17px;
+}
+.icon{
+  height: 20%;
+  margin-left:-173px;
+}
+.icon1{
+  height: 28%;
+  margin-left:-36px;
+}
+.input1{
+  margin-left: 900px;
+  border-radius: 1%;
+  width: 30%;
+  height: 30px;
+  font-size: 17px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+  }
+ 
+
+  .navbar a {
+      width: 100%;
+      padding: 10px;
+      font-size: large;
+  }
+
+ 
+
+  .input {
+      width: calc(100% - 180px);
+  }
+
+  .icon {
+      height: 24px;
+      margin-left: 0;
+      display: none;
+      
+  }
+
+  .login, .sign {
+      width: 100%;
+  }
+}
+.index{
+  color: rgb(128, 15, 0);
+}
+.a{
+  text-align: center;
+  font-size: xx-large;
+
+}
+a{
+  color:green;
+}
+
+
+.ft-3 i {
+  padding-right: 0.5rem;
+}
+
+.Last-footer {
+  background: #45a049;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.Last-footer p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.Footer{
+background-color:  #F8F8F4 ;
+color: black;
+  
+ }
+.index {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.letters {
+  text-align: center;
+  margin: 20px 0;
+  font-size: x-large;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.letters a {
+  text-decoration: none;
+  margin: 0 5px;
+  cursor: pointer;
+  color:green;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #DDD;
 }
 
-.card {
-  padding: 2em;
+.recipe {
+  margin: 20px;
+  text-align: center;
+  background-color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.recipe img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.name{
+   color: green;
 }

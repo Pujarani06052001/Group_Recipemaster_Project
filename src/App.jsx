@@ -1,35 +1,89 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/pages/Home';
+import Contact from './components/pages/Contact';
+import Products from './components/pages/Products';
+import About from './components/pages/About';
+import Login from './components/pages/Login';
+import Register from './components/pages/Register';
+import Footer from './components/Footer';
+import ProtectedRoute from './ProtectedRoute';
+import Nav from './components/Nav';
+import ImageGrid from './components/ImageGrid';
+import Quick from './components/pages/Quick';
+import Index from './components/pages/Index';
+import Tricks from './components/pages/Tricks';
+
+import Glossary from './components/pages/Glossary';
+
+const App = () => {
+  const [search, setSearch] = useState('');
+  const [call, setCall] = useState(false);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  const getData = (searchTerm = 'banana') => {
+    setLoading(true);
+    fetch(`https://forkify-api.herokuapp.com/api/v2/recipes/?search=${searchTerm}&key=8d488d17-fae0-474f-a48f-b7eab7d8c578`, {
+      method: 'GET',
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((res) => {
+        setData(res.data.recipes);
+        console.log('API data:', res.data.recipes);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+  useEffect(() => {
+    getData(search);
+  }, [call]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <BrowserRouter>
+      <div className="flex flex-col min-h-screen">
+        <Nav search={search} setSearch={setSearch} call={call} setCall={setCall} />
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route element={<ProtectedRoute />}>
+                  <Route path="/" element={<Home />} />
+                  <Route path = "/abc" element={<Glossary/>}/>
 
-export default App
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path='/Quick' element={<Quick />}/>
+                  <Route path='/index' element={<Index/>}/>
+                  <Route path='/tricks' element={<Tricks/>}/>
+                  <Route path="/products" element={<Products />} />
+
+                    <Route path="/dashboard" element={<ImageGrid data={data} loading={loading} />} />
+                
+
+            </Route>
+          </Routes>
+      
+
+
+        </div>
+        {/* <Footer /> */}
+      </div>
+    </BrowserRouter>
+  );
+};
+
+export default App;
+
